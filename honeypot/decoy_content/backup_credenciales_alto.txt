@@ -1,0 +1,8 @@
+# backup_credenciales_2026.txt - NO BORRAR
+aws_access_key_id = AKIA4XXXXXXXXXXXX1
+aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/xxxxxxxxxxxxxxxx
+db_host = prod-db-01.internal
+db_user = admin
+db_pass = Pr0d_2026!Secure
+vpn_user = soporte_remoto
+vpn_pass = R3moto#2026

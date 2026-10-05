@@ -28,3 +28,32 @@ El circuito biológico (LC4/LPLC2 → Giant Fiber) está validado contra la lite
 **No está demostrado** que este enfoque sea más eficaz como mecanismo de engaño que un sistema de reglas simple. No se ha corrido el experimento comparativo (cerebro vs. tabla de reglas, con atacantes reales). Este es un proyecto de exploración de ingeniería y neurociencia computacional aplicada a seguridad, no un producto de seguridad probado.
 
 ## Arquitectura
+
+Atacante (SSH)
+→ Cowrie (honeypot)
+→ traductor.py (clasifica el comando)
+→ API HTTP → servidor_cerebro.py
+→ simulación del conectoma (Brian2, 139k neuronas)
+→ nivel de pánico (tasa de disparo de la Giant Fiber)
+→ traductor.py decide: alerta / señuelos
+
+
+## Instalación
+
+Ver [docs/instalacion.md](docs/instalacion.md) para la guía completa, incluyendo los datos del conectoma (no incluidos en este repo por tamaño) y la instalación de Cowrie.
+
+## Próximos pasos
+
+Ideas para quien quiera continuar este proyecto:
+
+- Experimento comparativo real: cerebro biológico vs. tabla de reglas simple, con métricas de tiempo de permanencia, cantidad de comandos y tasa de detección del engaño
+- Más tipos de señuelo (archivos nuevos que aparecen, no solo contenido que cambia)
+- Latencia variable en las respuestas del honeypot según el nivel de pánico
+- Notificaciones externas (Telegram, correo) en alertas críticas
+- Despliegue en un VPS aislado para recibir atacantes reales
+
+Si te interesa alguna de estas direcciones, o tienes otras ideas, los pull requests e issues son bienvenidos. También puedes seguir este y otros proyectos en [s4mu3ln3.github.io](https://s4mu3ln3.github.io).
+
+## Licencia
+
+MIT. Ver [LICENSE](LICENSE).

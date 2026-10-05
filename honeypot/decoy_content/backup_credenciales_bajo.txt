@@ -1,0 +1,3 @@
+# backup de configuracion - revisar antes de borrar
+db_host=localhost
+db_user=app_svc

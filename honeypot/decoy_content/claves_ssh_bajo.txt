@@ -1,0 +1,2 @@
+# notas - pendiente mover a vault
+servidor staging: ver confluence

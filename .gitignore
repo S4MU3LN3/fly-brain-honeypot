@@ -218,3 +218,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+
+# --- Específico de este proyecto ---
+cowrie-env/
+results/
+*.pickle
+*.parquet
+Completeness_*.csv
+Connectivity_*.csv
+root_ids_cell_type_*.txt
